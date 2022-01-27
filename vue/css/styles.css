@@ -1,0 +1,406 @@
+/* Général -----------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:ital,wght@0,400;0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+:root {
+    --main-bg-color: #dda6b7;
+}
+.btn1 {
+    background-color: #d46382;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+    overflow-x: hidden;
+}
+.container-fluid {
+    /* font-family: 'Roboto Mono', monospace; */
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Page de connexion-----------------------------------------------------*/
+.containerConnexion{
+    background-color: var(--main-bg-color);
+}
+.blocConnexion{
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 1.5px );
+    -webkit-backdrop-filter: blur( 1.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
+}
+
+.logo{
+    margin-top: -8em;
+    text-align: center;
+}
+
+.blocConnexion {
+    border-radius: 3%;
+}
+
+/* Entete-------------------------------------------------------------------*/
+
+.entete {
+    background-color: #E6E6FA;
+    border: 1px solid black;
+    font-family: 'Dancing Script', cursive;
+    font-size: large;
+    position:absolute;
+}
+
+.bouge.floatable {
+    position: fixed;
+}
+
+.entete2 {
+    background-color: #E6E6FA;
+    border-bottom: 1px solid black;
+}
+
+.btnDeconnexion {
+    float: left;
+}
+
+.enteteTxt {
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid black;
+}
+
+/* Main page avec card -----------------------------------------------------*/
+
+.containerMain{
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: var(--main-bg-color) ;
+    position:absolute;
+    z-index:1;
+}
+
+.containerTuto{
+    position:absolute;
+    z-index:2;
+}
+
+.card1 {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    margin-left: 4rem;
+    border-radius: 5%;
+}
+
+.card2 {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    border-radius: 5%;
+}
+
+.card0 {
+    background-color: #E6E6FA;
+    border-top: solid 1px black;
+    
+}
+
+.btnContinuer {
+   margin-top: 1.5rem;
+}
+
+
+/* Menu ----------------------------------------------------------*/
+
+.menu {
+    background-color: #E6E6FA;
+    border-right: 1px solid black;  
+}
+
+.containerMenu {
+    height: 100vh;
+}
+
+.txtMenu {
+    margin-left: 1rem;
+}
+
+.badge {
+    height: 1rem;
+}
+
+.notif {
+    margin-left: 1.9rem;
+}
+
+/* Créer un trajet -----------------------------------------------------*/
+
+
+.containerCreer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-bg-color);
+    width: 50%;
+    
+}
+
+.creerTrajet {
+    align-self: auto;
+    padding: 4%;
+    background-color: white;
+    border-radius: 5%;
+}
+
+
+
+/* Afficher tous les trajets dispos --------------------------------------------------*/
+.containerCardG {
+    width: 100%;
+    margin-bottom: 2rem;
+    
+}
+
+.card00 {
+    background-color: #ff656f;
+}
+
+.trait {
+    margin-bottom: 1rem;
+}
+
+.imgCard {
+    align-items: center;
+    border-right: dotted 1px black;
+    align-content: center;
+    margin: auto;
+}
+
+
+.blocHautTrajet {
+    border-bottom: 1px solid black;
+}
+
+.blocBasTrajet {
+    margin-top: 1rem;
+}
+
+/* Activité ---------------------------------------------------------------------*/
+.mesDemandes {
+    border-right: dotted black 1px;
+    height: 100vh;
+}
+
+.titre {
+    border-bottom: 1px dotted black;
+}
+
+.imgTrait {
+    width: 5rem;
+}
+
+.recherche {
+    width: 5rem;
+    background-color: #E6E6FA;
+    padding: 1rem;
+    border-radius: 15px 15px 15px 15px;
+    display: block;
+    -webkit-transition-delay: 5s;
+     transition-delay: 5s;
+}
+
+#afficher {
+    border-radius: 2%;
+    border: solid 1px black;
+    width: 7rem;
+    
+}
+
+#fermer {
+    border-radius: 2%;
+    border: solid 1px black;
+    width: 7rem;
+}
+
+.bbb {
+    width: 5rem;
+}
+
+/* Mes Vehicules -----------------------------------------------------------------------------------------------------------*/
+.containerGeVehicule {
+    background-color: var(--main-bg-color);
+}
+
+.ajouterVehicule {
+    
+    background-color: aqua;
+}
+
+.btnVehicule {
+    border-bottom: dotted 1px black;
+}
+
+.cardVehicule {
+    margin-top: 1rem;
+    background-color:#E6E6FA;
+    border-radius: 3%;
+}
+
+.containerVehicule {
+    margin-left: 3rem;
+}
+
+
+.imgVehicule {
+    border-bottom: 1px solid black;
+}
+
+body {
+    background-color: #ff656f;
+}
+
+/*Admin ----------------------------------------------------------------------------------------------------------------*/
+.containerAdmin {
+    background-color: rgba(177, 147, 116, 0.425);
+    display: flex;
+    justify-content: center;
+}
+
+.cardAdmin {
+    margin-top: 1rem;
+    background-color:#E6E6FA;
+    border-radius: 3%;
+    height: 34rem;
+    width: 50rem;
+}
+
+.btnAjouter {
+    margin-top: 1rem;
+}
+
+#map {
+    height: 60%;
+    border-radius: 5%;
+  }
+
+.cardInfo {
+display: block;
+ background-color: #E6E6FA;
+ width: 100%;
+ height: 40%;
+ border: 1px black solid;
+ border-radius: 3%;
+}
+
+.containerCardInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(177, 147, 116, 0.425);
+}
+
+h3{
+    color: #ff656f;
+}
+
+.imgVoitureCree {
+    border-radius: 4%;
+}
+
+.mapCard {
+    width: 100%;
+    height: 100%;
+    background-color: #d46382;
+}
+
+.trajet:hover {
+    background-color: #ff938ebe ;
+    transform: scale(1.02);
+  }
+
+.trajetComplet {
+    position: relative;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);
+    border-radius: 2%;
+    border: solid rgba(0, 0, 0, 0.281); 
+}
+
+.trajetComplet:hover {
+    background-color: #86868636 ;
+    transform: scale(1.02);
+    overflow-X:none;
+  }
+
+.trajet {
+    position: relative;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);
+    border-radius: 2%;
+    border: solid rgba(0, 0, 0, 0.281); 
+}
+
+.cardInfoTrajet {   
+    background-color: rgba(177, 147, 116, 0.425);
+    width: 30rem;
+    border-radius: 5%;
+}
+
+.trajetIntrouvable {
+    background-color: #E6E6FA;
+    width: 100%;
+    height: 20%;
+    border-radius: 5%;
+}
+
+.containerRechercheFalse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnRecherche {
+    margin-top: 1rem;
+}
