@@ -39,7 +39,11 @@ foreach($mesTrajets as $tab){
                                 foreach($getDemande as $ligne){
                                     $name = UserDb::getNameUser($ligne['idUser']);
                                     foreach($name as $ligne2){
-                                       echo $ligne2['prenom'];
+                                        $prenom = preg_split('/(?=[A-Z])/',$ligne2['prenom']);
+                                        echo"<pre>";
+                                        var_dump($prenom[1]);
+                                        echo"</pre>";
+                                        
                                     }
                                 }
                             echo"
