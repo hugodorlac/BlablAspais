@@ -23,7 +23,7 @@ Notre solution de covoiturage répond à un besoin important de la communauté �
 
 # Installation
 Clonez le projet depuis Github : git clone https://github.com/hugodorlac/BlablAspais.git  
-Créez une base de données MySQL et importez le fichier database.sql situé dans le dossier **model** (pas encore dispo)  
+Créez une base de données MySQL et importez le fichier database.sql situé dans le dossier **model** **(pas encore dispo)**  
 Modifiez le fichier model/connectPdo.php et configurez les paramètres de connexion à la base de données
 
 # Contributions
